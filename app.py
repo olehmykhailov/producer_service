@@ -8,7 +8,7 @@ API_PATH = os.getenv("API_PATH", "/api/message")
 
 def send_message():
     url = f'http://{API_HOST}:{API_PORT}{API_PATH}'
-    message = 'Hello, World!'
+    message = 'Hello, Linux!'
     try:
         response = requests.get(url, params={'message': message})
         print(f"Response: {response.json()}")
